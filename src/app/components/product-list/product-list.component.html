@@ -1,0 +1,16 @@
+<table>
+  <tr *ngFor="let product of products">
+    <td>{{ product.name }}</td>
+    <td>{{ product.unitPrice }}</td>
+    <td>
+      <button (click)="addToCart(product)">Sepete Ekle</button>
+    </td>
+  </tr>
+</table>
+<h1>SEPET</h1>
+<table>
+  <tr *ngFor="let cart of cart">
+    <td>{{ cart.name }}</td>
+    <td>{{ cart.unitPrice }}</td>
+  </tr>
+</table>
